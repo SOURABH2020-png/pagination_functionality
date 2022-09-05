@@ -14,16 +14,12 @@ export default function SearchSelectbar({ setSelectDate, selectDate, setLimit })
                 </select>
                 <span> Entries</span>
             </div>
-
             <div>
-                {/* <span className="border px-2"> */}
                 <input type="date"
                     placeholder="Select Duration"
                     className="border-0 text-white bg-transparent "
                     onChange={(e) => setSelectDate(e.target, selectDate)}
-
                 />
-                {/* </span> */}
             </div>
         </div>
     )

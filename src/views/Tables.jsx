@@ -4,12 +4,10 @@ import React, { useEffect, useState } from "react";
 import Pagination from "react-js-pagination";
 import SearchSelectbar from "./SearchSelectbar";
 
-
 export default function Tables() {
 
     const [dataValue, setDataValue] = useState([]);
     const [selectDate, setSelectDate] = useState();
-
 
     const [pages, setpages] = useState(1);
     const [totalRecords, setTotalRecords] = useState(0);
@@ -20,8 +18,7 @@ export default function Tables() {
         try {
             const response = await axios.get("https://admindevapi.wowtalent.live/api/admin/dashboard/installstatasticlist?fromdate=2022-06-01&todate=2022-07-01", {
                 payload: {
-                    todate: selectDate,
-                    
+                    todate: selectDate,                
                     limit,
                     skipCount
                 }

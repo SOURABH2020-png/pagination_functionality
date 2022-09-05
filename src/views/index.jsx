@@ -10,7 +10,6 @@ export default function Dashboard() {
             <div className="bunting-bg rounded px-3 py-2 mt-4">
                 <Tables />
             </div>
-
         </AuthLayout>
     )
 }
