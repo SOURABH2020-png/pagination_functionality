@@ -1,0 +1,94 @@
+@import "./variable.scss";
+
+body{
+    background-color: $blue !important;
+    color: white !important;
+}
+
+.card{
+    background-color: transparent !important;
+}
+
+.profile{
+    background-color: white;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+}
+
+.sidebar__main{
+    min-height: 80vh;
+    background-color: $Bunting !important;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    
+    .main_profile .profile{
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .nav {
+        .nav-link.active{
+            background-color: #615AC8;
+            border-radius: 7px;
+            box-shadow: 0 0 8px #615AC8;
+        }
+        .nav-link{
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            color: white;
+            
+            span{
+                padding-right: 10px !important;
+                padding-left: 10px !important;
+                margin-right: 6px;
+            }
+        }
+    }
+}
+
+.custom_table{
+    table {
+        thead tr th{
+            background-color: $Nero !important;
+            padding: 10px 15px;
+            font-size: 12px;
+            text-align: center;
+        }
+        tbody tr td{
+            text-align: center;
+            padding: 10px 15px;
+            font-size: 12px;
+            border-bottom: 1px solid #707070;
+        }
+    }
+}
+
+.custom_pagination{
+    display: flex;
+    justify-content: end;
+    .pagination{
+        .page-item .page-link{
+            border: 0 !important;
+            background-color: transparent !important;
+            align-items: center ;
+            justify-content: center;
+            display: flex;
+            padding: 8 !important;
+            color: white;
+        }
+        .page-item.active{
+            background-color: #615AC8;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+.page-link:focus{
+    box-shadow: 0 0 0 !important;
+}

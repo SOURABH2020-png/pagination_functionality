@@ -1,0 +1,32 @@
+
+// colors
+
+$blue: #161C32;
+$Bunting: #283046;
+$Nero: #271C1C;
+
+.blue-bg{
+    background-color: $blue;
+}
+
+.bunting-bg{
+    background-color: $Bunting;
+}
+
+.nero-bg{
+    background-color: $Nero;
+}
+
+$fs-14 : 14px;
+$fs-20 : 20px;
+
+.fs-14{
+    font-size: $fs-14;
+}
+.fs-20{
+    font-size: $fs-20;
+}
+
+.line-h-23{
+    line-height: 23px;
+}
